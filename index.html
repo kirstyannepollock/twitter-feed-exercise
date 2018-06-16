@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+	<title>Twitter Feed</title>
+	<meta name="keywords" content="Twitter Feed" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset utf="8">
+
+	<meta name="description" content="Twitter Feed">
+	<meta name="author" content="Kirsty Pollock">
+	<link rel="canonical" href="kapitc-dev.stackstaging.com/twitterfeed">
+
+	<meta property="og:title" content="Twitter Feed">
+	<meta property="og:description" content="Twitter Feed">
+	<meta property="og:url" content="kapitc-dev.stackstaging.com/twitterfeed/twitter.jpg">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="Twitter Feed Test">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Twitter Feed">
+	<meta name="twitter:description" content="Twitter Feed">
+	<meta name="twitter:image" content="">
+
+	<meta name="distribution" content="local">
+	<meta name="robots" content="follow,index">
+
+	<!--favicon -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=BenchNine:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Cagliostro" rel="stylesheet">
+	<!--fonts-->
+	<!--link css-->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<!--custom css-->
+
+
+
+</head>
+
+<body>
+	<div class="page-container">
+		<header>
+			<img src="twitter.jpg" alt="">
+
+			<h1 hidden>Twitter Feed Widget</h1>
+		</header>
+
+		<div id="twitter2" class="twitter">
+		</div>
+
+		<div id="twitter3" class="twitter">
+		</div>
+
+		<!--footer-->
+		<footer class="footer" id="footer">
+
+		</footer>
+
+
+	</div>
+	</div>
+
+
+
+	<!--jquery-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous">
+	</script>
+
+	<!--bootstrap-js-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous">
+	</script>
+
+	<!-- plugin -->
+	<script src="plugin.js"></script>
+
+	<!--script-->
+	<script>
+		$(document).ready(function () {
+
+			$("#twitter2").twitterFeed();
+
+			$("#twitter3").twitterFeed({
+				url: "https://twitter.com/postmanclient",
+				class: "twitter-timeline",
+				data_height: "800",
+				data_width: "100%",
+				linkText: "Postman"
+			});
+
+		});
+
+	</script>
+
+
+</body>
+
+</html>
