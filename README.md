@@ -1,9 +1,9 @@
 # twitter-feed-exercise
-##Exercise to create a twitter feed plug in
+## Exercise to create a twitter feed plug in
 
 [index.html](https://github.com/kirstyannepollock/twitter-feed-exercise/blob/master/index.html) is the example
 
-###To use in your own pages: 
+### To use in your own pages: 
 
 include the file [js/plugin.js](https://github.com/kirstyannepollock/twitter-feed-exercise/blob/master/js/plugin.js)
 
